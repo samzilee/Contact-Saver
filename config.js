@@ -1,6 +1,10 @@
 let contactList = document.querySelector(".contactList");
 
-localStorage.setItem("contacts",JSON.stringify([]))
+document.addEventListener("DOMContentLoaded", () =>{
+  localStorage.setItem("contacts",JSON.stringify([]))
+  renderContacts()
+});
+
 let savedContacts = JSON.parse(localStorage.getItem("contacts"));
 
 const renderContacts = () => {
@@ -22,7 +26,6 @@ const renderContacts = () => {
   });
 };
 
-document.addEventListener("DOMContentLoaded", () => renderContacts());
 //function mappingContact
 
 const numberInput = document.getElementById("numberInput");
