@@ -1,4 +1,6 @@
 let contactList = document.querySelector(".contactList");
+
+localStorage.setItem(JSON.stringify([]))
 let savedContacts = JSON.parse(localStorage.getItem("contacts"));
 
 const renderContacts = () => {
