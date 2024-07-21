@@ -119,7 +119,9 @@ p {
   }
   .inputContact {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
   }
   .inputContact input {
     padding-top: 7px;
